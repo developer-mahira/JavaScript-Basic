@@ -1,18 +1,18 @@
 
 console.log("comparison operators")
 
-// ==  equals to   value check krta hai type conversion krta hai
-// != not equal 
-// === equal value and type     // value check krta hai type conversion nh krta 
-// !== not equal value not equal type
-// > greater than
-// < less than
-// >= greater than or equal to // value bari ya baraber honi chahia  
-// <= less than or equal to  //value choti ya baraber honi chahia
-// ? turnary operator
+/* ==  equals to   value check krta hai type conversion krta hai
+ != not equal 
+ === equal value and type     // value check krta hai type conversion nh krta 
+ !== not equal value not equal type
+ > greater than
+ < less than
+ >= greater than or equal to // value bari ya baraber honi chahia  
+ <= less than or equal to  //value choti ya baraber honi chahia
+ ? turnary operator
 
-// comparison m hum koi vlaues ko compare krty hain or voh 
-// return m true ya false ko return krwata hai
+ comparison m hum koi vlaues ko compare krty hain or voh 
+ return m true ya false ko return krwata hai */
 
 let comp1 = 6 ;     // number
 let comp2= 8 ;     // number 

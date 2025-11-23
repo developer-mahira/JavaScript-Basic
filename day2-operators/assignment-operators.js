@@ -76,26 +76,26 @@ i -= j;           // again 0 - 0 hoga 0
 console.log(i)
 i *= j ;          // 0 * 0 hoga 0 
 console.log(i)
-i **= j ;  // 1       // 0*0*0*0 (0^0) ye mathematically tricky hai js m 1 output dega
-//JavaScript mein 0 ** 0 ka result 1 hota hai. Iska reason: JavaScript (ECMAScript) numeric calculations IEEE-754 double 
-// precision par based hain aur spec ke mutabiq x ** y jab dono zero hoon to result 1 return karta hai.
-//Note: Mathematics mein 0^0 ko ambiguous (undefined/indeterminate) mana jata hai, 
-// lekin programming languages mein practical reasons ki wajah se aksar 1 return hota hai.
-// 1 Q ???    Programming mein exponentiation ko aise implement kiya gaya ke empty product ka
-//neutral element 1 ho — isliye 0**0 = 1 practical choice hai.
-// Simplify karne ke liye: x**0 for any non-zero x => 1.
-//  Implementations consistent rakhne ke liye 0**0 ko bhi 1 set kar dete hain.
+i **= j ;  // 1        0*0*0*0 (0^0) ye mathematically tricky hai js m 1 output dega
+/*JavaScript mein 0 ** 0 ka result 1 hota hai. Iska reason: JavaScript (ECMAScript) numeric calculations IEEE-754 double 
+ precision par based hain aur spec ke mutabiq x ** y jab dono zero hoon to result 1 return karta hai.
+Note: Mathematics mein 0^0 ko ambiguous (undefined/indeterminate) mana jata hai, 
+lekin programming languages mein practical reasons ki wajah se aksar 1 return hota hai.
+ 1 Q ???    Programming mein exponentiation ko aise implement kiya gaya ke empty product ka
+neutral element 1 ho — isliye 0**0 = 1 practical choice hai.
+ Simplify karne ke liye: x**0 for any non-zero x => 1.
+ Implementations consistent rakhne ke liye 0**0 ko bhi 1 set kar dete hain.*/
 console.log(i)
-i /= j;  //Real life math me: 1 ko 0 se divide nahi kar sakte → undefined.
-//JS (aur almost sab programming languages) me:
-// 1 ÷ 0 ka result Infinity hota hai. 
-//Zero se divide → answer itna bada hota hai ke number me represent nahi ho sakta
-//So JavaScript kehta hai: "theek hai, result Infinity le lo."
-//JavaScript me Infinity ek number hi hota hai, string ya object nahi.
+i /= j;  /*Real life math me: 1 ko 0 se divide nahi kar sakte → undefined.
+JS (aur almost sab programming languages) me:
+ 1 ÷ 0 ka result Infinity hota hai. 
+Zero se divide → answer itna bada hota hai ke number me represent nahi ho sakta
+So JavaScript kehta hai: "theek hai, result Infinity le lo."
+JavaScript me Infinity ek number hi hota hai, string ya object nahi.*/
 console.log(i) 
-i %= j;    //i %= j → matlab i = i % j → i = Infinity % 0
-//JavaScript mein remainder (modulo) with 0 ka result NaN hota hai.
-//Infinity % 0 bhi NaN deta hai.
-//NaN ka matlab Not-a-Number — yeh indicate karta hai ke
-//  operation meaningful numeric result produce nahi kar saka.
+i %= j;    /*i %= j → matlab i = i % j → i = Infinity % 0
+JavaScript mein remainder (modulo) with 0 ka result NaN hota hai.
+Infinity % 0 bhi NaN deta hai.
+NaN ka matlab Not-a-Number — yeh indicate karta hai ke
+ operation meaningful numeric result produce nahi kar saka.*/
 console.log(i)
